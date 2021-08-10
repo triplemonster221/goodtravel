@@ -32,7 +32,7 @@ p {
 }
 
 section {
-	padding-top: 144px;
+	padding-top: 143px;
 }
 
 a {
@@ -143,18 +143,18 @@ h2 {
 
 }
 
-.routes__title {
+.routes-title {
 	margin-bottom: 100px;
 }
 
 .destinations {
 	display: flex;
 	height: 649px;
-	margin-bottom: 90px;
+	margin-bottom: 88px;
 }
 
 .destinations__item {
-	flex: 0 1 672px;
+	flex: 0 1 664px;
 	background-color: #F1F0FF;
 	padding: 112px 78px 112px 73px;
 	position: relative;
@@ -166,7 +166,7 @@ h2 {
 	width: 68px;
 	height: 17px;
 	background-image: url(../images/arrow-next.png);
-	bottom: 112px;
+	bottom: 114px;
 	left: 76px;
 	cursor: pointer;
 }
@@ -223,7 +223,7 @@ h2 {
 	text-align: center;
 	letter-spacing: 0.05em;
 	color: #5F51FF;
-	padding: 18px 5px;
+	padding: 18px 5px 16px 5px;
 	transition: all .3s ease;
 }
 
@@ -233,22 +233,34 @@ h2 {
 }
 
 /*possibilities=================================================================*/
+.possibilities {
+	padding-top: 130px;
+}
 
 .possibilities-content {
-	background: #F1F1F5 url('../images/gits1.jpg') no-repeat right bottom / 50%;
+	background: #F1F1F5 url('../images/gits1.jpg') no-repeat right bottom / 49%;
 	height: 626px;
 }
 
 .possibilities-title {
 	margin-bottom: 93px;
+	margin-left: 24px;
+}
+
+.possibilities-content__list {
+	padding-top: 44px;
 }
 
 .possibilities-content__item {
 	font-size: 16px;
 	width: 401px;
 	position: relative;
-	line-height: 1.01em;
-	margin-bottom: 61px;
+	margin-bottom: 57px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	padding-top: 22px;
 }
 
 .spossibilities-content__item:last-child {
@@ -264,7 +276,7 @@ h2 {
 	background: #4EB1B6;
 	border-radius: 23px;
 	transform: rotate(90deg);
-	top: -50px;
+	top: -22px;
 	left: 30px;
 
 }
