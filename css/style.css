@@ -1,8 +1,9 @@
 /* Спецификация */
+
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 13px;
 	color: #2D3049;
@@ -34,60 +35,251 @@ section {
 	padding-top: 144px;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .container {
 	width: 1140px;
 	margin: 0 auto;
 }
-/*=================================================================*/
-/*=================================================================*/	
-html {
-	box-sizing: border-box;
-	height: 100%;
-}
-
-*,
-*::after,
-*::before {
-	box-sizing: inherit;
-}
-
-body {
-	font-family: sans-serif;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-}
-
-p {
-	margin: 0;
-}
-
-ul,li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-	color:inherit;
-}
-
-h1,h2,h3,h4,h5,h6 {
-	margin: 0;
-}
 
 h2 {
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 37px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #304041;
+}
+
+.container_full-height {
+	height: 100%;
+	display: flex;
+	align-items: center
+}
+
+
+/*header=================================================================*/
+
+.header {
+	color: #fff;
+	padding-top: 90px;
+	padding-bottom: 323px;
+	text-align: center;
+	background: linear-gradient(180deg, rgb(41 183 204 / 0%) 1.39%, rgb(12 35 39 / 67%) 44.44%), url(../images/pekin.jpg) no-repeat center top/cover;
+}
+
+.logo img{
+	margin-bottom: 201px;
+}
+
+.offer {
 
 }
 
-input,
-textarea {
-	font-family: inherit;
-}
-
-.container {
-	max-width:1200px;
-	padding: 0 15px;
+.offer__info {
+	display: block;
+	width: 239px;
 	margin: 0 auto;
+	padding: 8px 3px 6px;
+	background: #FFFFFF;
+	border-radius: 78px;
+	font-weight: 800;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 24px;
 }
+
+.offer__title {
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 73px;
+	text-align: center;
+	letter-spacing: 0.145em;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+
+.offer__text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-bottom: 24px;
+}
+
+.offer__btn {
+	display: block;
+	width: 247px;
+	height: 56px;
+	background: #5F51FF;
+	border-radius: 119px;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #fff;
+	padding-top: 18px;
+	margin: 0 auto;
+	transition: all .3s ease;
+}
+
+.offer__btn:hover {
+	background: #282271;
+}
+
+/*routes=================================================================*/
+
+.routes {
+
+}
+
+.routes__title {
+	margin-bottom: 100px;
+}
+
+.destinations {
+	display: flex;
+	height: 649px;
+	margin-bottom: 90px;
+}
+
+.destinations__item {
+	flex: 0 1 672px;
+	background-color: #F1F0FF;
+	padding: 112px 78px 112px 73px;
+	position: relative;
+}
+
+.destinations__item::after {
+	content: '';
+	position: absolute;
+	width: 68px;
+	height: 17px;
+	background-image: url(../images/arrow-next.png);
+	bottom: 112px;
+	left: 76px;
+	cursor: pointer;
+}
+
+.destinations__namber {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #789AA0;
+	margin-bottom: 20px;
+}
+
+.destinations__title {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #304041;
+	margin: 20px 0 40px;
+}
+
+.destinations__text {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 23px;
+	letter-spacing: 0.05em;
+	color: #304041;
+}
+
+.destinations__text+ .destinations__text {
+	margin-top: 22px;
+}
+
+.destinations__img {
+	flex: 1 1 auto;
+	background-image: url(../images/routes.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.routes__btn {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 332px;
+	border: 1px solid #5F51FF;
+	border-radius: 94px;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #5F51FF;
+	padding: 18px 5px;
+	transition: all .3s ease;
+}
+
+.routes__btn:hover {
+	color: #fff;
+	background-color: #5F51FF;
+}
+
+/*possibilities=================================================================*/
+
+.possibilities-content {
+	background: #F1F1F5 url('../images/gits1.jpg') no-repeat right bottom / 50%;
+	height: 626px;
+}
+
+.possibilities-title {
+	margin-bottom: 93px;
+}
+
+.possibilities-content__item {
+	font-size: 16px;
+	width: 401px;
+	position: relative;
+	line-height: 1.01em;
+	margin-bottom: 61px;
+}
+
+.spossibilities-content__item:last-child {
+	margin-bottom: 0;
+}
+
+.possibilities-content__item:before {
+	content:'';
+	display: block;
+	width: 7px;
+	height: 64px;
+	position: absolute;
+	background: #4EB1B6;
+	border-radius: 23px;
+	transform: rotate(90deg);
+	top: -50px;
+	left: 30px;
+
+}
+
+/*footer=================================================================*/
+
+.footer-inner {
+	display: flex;
+	padding: 147px 0;
+}
+
+.footer__text {
+	font-size: 14px;
+	color: #6E7187;
+	margin-right: 60px;
+}
+
+
